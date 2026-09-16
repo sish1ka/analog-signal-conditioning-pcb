@@ -84,6 +84,49 @@ voltages before evaluating signal behavior.
 
 ![Op-Amp Supply Voltage](Documentation/test-01-opamp-supply.png)
 
+### 2. Voltage Gain Verification
+
+**Purpose:**  
+Verify that the measured voltage gain agrees with the theoretical gain determined by the feedback resistors.
+
+**Theoretical Gain:**
+
+$$
+A_v = 1 + \frac{R_2}{R_1}
+$$
+
+$$
+A_v = 1 + \frac{20k\Omega}{10k\Omega} = 3
+$$
+
+**Procedure:**
+1. Measure the input signal amplitude from the transient analysis.
+2. Measure the output signal amplitude.
+3. Calculate the measured voltage gain using:
+
+$$
+A_v = \frac{V_{out}}{V_{in}}
+$$
+
+4. Compare the measured gain with the theoretical gain of 3×.
+
+**Expected Result:**
+
+| Parameter | Expected |
+|---|---:|
+| Theoretical gain | 3× |
+| Measured gain | ~3× |
+| Gain error | Minimal |
+
+**Measured Result:**  
+`Theoretical gain = 3.00×`  
+`Measured gain = Vout / Vin = 3.00×`
+
+**Result:** Pass
+
+![Voltage Gain Verification](Documentation/test-05-gain.png)
+
+
 ### 4. Input and Op-Amp Output Verification
 
 **Purpose:**  
