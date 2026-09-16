@@ -50,6 +50,12 @@ as a 2-layer PCB using KiCad.
 
 Simulation results and final design performance will be documented here.
 
+## Verification Procedure
+
+The circuit was verified using a node-by-node transient analysis.
+Each verification step checks a specific electrical condition before
+proceeding to the next stage.
+
 ### 1. Op-Amp Supply Voltage Verification
 
 **Purpose:**  
@@ -76,7 +82,7 @@ voltages before evaluating signal behavior.
 
 **Result:** Pass
 
-![Op-Amp Supply Voltage](Documentation/opamp-supply-voltage.png)
+![Op-Amp Supply Voltage](Documentation/test-01-opamp-supply.png)
 
 ## Files
 
