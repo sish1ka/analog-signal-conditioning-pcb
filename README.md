@@ -124,7 +124,7 @@ $$
 
 **Result:** Pass
 
-![Voltage Gain Verification](Documentation/test-05-gain.png)
+![Voltage Gain Verification](Documentation/test-02-gain.png)
 
 
 ### 4. Input and Op-Amp Output Verification
