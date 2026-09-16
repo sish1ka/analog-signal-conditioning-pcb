@@ -208,13 +208,13 @@ $$
 The low-frequency gain is approximately 9.54 dB because the op-amp provides a voltage gain of 3×:
 
 $$
-20\log_{10}(3) \approx 9.54\dB
+20\log_{10}(3) \approx 9.54\ dB
 $$
 
 Therefore, the -3 dB cutoff point is approximately:
 
 $$
-9.54 - 3 = 6.54\dB
+9.54 - 3 = 6.54\ dB
 $$
 
 **Measured Result:**  
