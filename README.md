@@ -34,7 +34,7 @@ as a 2-layer PCB using KiCad.
 
 ### Transient Response
 
-[transient plot will go here]
+![Transient Response](Documentation/transient_response.png)
 
 ## PCB Design
 
