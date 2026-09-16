@@ -24,7 +24,7 @@ as a 2-layer PCB using KiCad.
 
 ## Circuit Design
 
-[schematic image will go here]
+![Circuit design](Documentation/schematic.png)
 
 ## LTspice Simulation
 
