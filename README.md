@@ -126,6 +126,51 @@ $$
 
 ![Voltage Gain Verification](Documentation/test-02-gain.png)
 
+### 3. Filter Response Verification
+
+**Purpose:**  
+Verify the frequency response of the output low-pass filter and confirm that the measured cutoff frequency agrees with the theoretical value.
+
+**Theoretical Cutoff Frequency:**
+
+$$
+f_c = \frac{1}{2\pi R_3 C_1}
+$$
+
+For:
+
+- `R3 = 10 kΩ`
+- `C1 = 10 nF`
+
+$$
+f_c = \frac{1}{2\pi(10k\Omega)(10nF)}
+$$
+
+$$
+f_c \approx 1.59\text{ kHz}
+$$
+
+**Procedure:**
+1. Run an AC analysis in LTspice.
+2. Plot the output voltage magnitude.
+3. Identify the frequency where the output magnitude decreases by approximately 3 dB from its passband value.
+4. Compare the measured cutoff frequency with the theoretical value.
+
+**Expected Result:**
+
+| Parameter | Expected |
+|---|---:|
+| Filter type | Low-pass |
+| Theoretical cutoff | ~1.59 kHz |
+| Measured cutoff | ~1.59 kHz |
+| Attenuation at cutoff | ~−3 dB |
+
+**Measured Result:**  
+`fc ≈ 1.59 kHz`
+
+**Result:** ✅ Pass
+
+![Filter Frequency Response](Documentation/test-03-filter-response.png)
 
 ### 4. Input and Op-Amp Output Verification
 
