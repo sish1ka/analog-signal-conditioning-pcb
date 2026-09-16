@@ -30,7 +30,7 @@ as a 2-layer PCB using KiCad.
 
 ### Frequency Response
 
-[Bode plot will go here]
+![Frequency Response](Documentation/frequency_response.png)
 
 ### Transient Response
 
