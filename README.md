@@ -162,7 +162,15 @@ Verify that the input signal has the expected amplitude and frequency, and that 
 ### 4. Filter Response Verification
 
 **Purpose:**  
-Verify the frequency response of the output low-pass filter and confirm that the measured cutoff frequency agrees with the theoretical value.
+Verify the frequency response of the RC low-pass filter and confirm that the measured cutoff frequency agrees with the theoretical value.
+
+**Filter Configuration:**
+
+| Component | Value |
+|---|---:|
+| R3 | 10 kΩ |
+| C1 | 10 nF |
+| Filter type | Low-pass |
 
 **Theoretical Cutoff Frequency:**
 
@@ -170,38 +178,52 @@ $$
 f_c = \frac{1}{2\pi R_3 C_1}
 $$
 
-For:
-
-- `R3 = 10 kΩ`
-- `C1 = 10 nF`
-
 $$
-f_c = \frac{1}{2\pi(10k\Omega)(10nF)}
+f_c = \frac{1}{2\pi(10\,k\Omega)(10\,nF)}
 $$
 
 $$
-f_c \approx 1.59\text{ kHz}
+f_c \approx 1.59\,kHz
 $$
 
 **Procedure:**
-1. Run an AC analysis in LTspice.
-2. Plot the output voltage magnitude.
-3. Identify the frequency where the output magnitude decreases by approximately 3 dB from its passband value.
-4. Compare the measured cutoff frequency with the theoretical value.
+1. Set the input voltage source AC amplitude to 1 V for AC analysis.
+2. Run an AC analysis using:
+   `.ac dec 100 10 100k`
+3. Plot the output voltage magnitude `V(VOUT)`.
+4. Identify the low-frequency output magnitude.
+5. Determine the frequency where the magnitude is approximately 3 dB below the low-frequency value.
+6. Compare the measured cutoff frequency with the theoretical value.
 
 **Expected Result:**
 
 | Parameter | Expected |
 |---|---:|
+| Low-frequency gain | ~9.54 dB |
 | Filter type | Low-pass |
-| Theoretical cutoff | ~1.59 kHz |
-| Measured cutoff | ~1.59 kHz |
-| Attenuation at cutoff | ~−3 dB |
+| Theoretical cutoff frequency | ~1.59 kHz |
+| Magnitude at cutoff | ~6.54 dB |
+| Roll-off after cutoff | ~−20 dB/decade |
+
+The low-frequency gain is approximately 9.54 dB because the op-amp provides a voltage gain of 3×:
+
+$$
+20\log_{10}(3) \approx 9.54\,dB
+$$
+
+Therefore, the -3 dB cutoff point is approximately:
+
+$$
+9.54 - 3 = 6.54\,dB
+$$
 
 **Measured Result:**  
-`fc ≈ 1.59 kHz`
+`Low-frequency gain ≈ 9.5 dB`  
+`Measured cutoff frequency ≈ 1.6 kHz`
 
-**Result:** ✅ Pass
+The measured cutoff frequency agrees closely with the theoretical value of approximately 1.59 kHz.
+
+**Result:** Pass
 
 ![Filter Frequency Response](Documentation/test-04-filter-response.png)
 
