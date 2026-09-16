@@ -30,11 +30,11 @@ as a 2-layer PCB using KiCad.
 
 ### Frequency Response
 
-
+![Frequency Response](Documentation/frequency_response.png)
 
 ### Transient Response
 
-
+![Transient Response](Documentation/transient_response.png)
 
 ## PCB Design
 
