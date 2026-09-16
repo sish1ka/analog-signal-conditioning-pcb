@@ -84,6 +84,39 @@ voltages before evaluating signal behavior.
 
 ![Op-Amp Supply Voltage](Documentation/test-01-opamp-supply.png)
 
+### 4. Input and Op-Amp Output Verification
+
+**Purpose:**  
+Verify that the input signal has the expected amplitude and frequency, and that the op-amp produces the expected amplified output.
+
+**Procedure:**
+1. Run a transient analysis for 100 ms in LTspice.
+2. Probe the input node of the op-amp.
+3. Verify that the input signal is a 50 mV amplitude, 60 Hz sine wave centered around 0 V.
+4. Probe the op-amp output node.
+5. Verify that the output waveform follows the input waveform with the expected 3× voltage gain.
+6. Compare the measured input and output amplitudes.
+
+**Expected Result:**
+
+| Parameter | Input | Op-Amp Output |
+|---|---:|---:|
+| Peak amplitude | 50 mV | ~150 mV |
+| Peak-to-peak voltage | 100 mV | ~300 mV |
+| Frequency | 60 Hz | 60 Hz |
+| DC offset | 0 V | 0 V |
+| Voltage gain | — | ~3× |
+
+**Measured Result:**  
+`Vin = 50 mV peak`  
+`Vout = 150 mV peak`  
+`f = 60 Hz`  
+`Gain = Vout / Vin ≈ 3`
+
+**Result:**  Pass
+
+![Input and Op-Amp Output Verification](Documentation/test-04-opamp-output.png)
+
 ## Files
 
 - `LTspice/` — circuit simulations
