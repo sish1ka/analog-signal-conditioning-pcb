@@ -38,6 +38,43 @@ as a 2-layer PCB using KiCad.
 
 ## PCB Design
 
+### Components
+
+| Reference | Component | Value | Footprint |
+|---|---|---|---|
+| U1 | LM358 Dual Op-Amp | LM358 | `Package_SO:SOIC-8_3.9x4.9mm_P1.27mm` |
+| R1 | Resistor | 10 kΩ | `Resistor_SMD:R_0805_2012Metric_Pad1.18x1.45mm_HandSolder` |
+| R2 | Resistor | 20 kΩ | `Resistor_SMD:R_0805_2012Metric_Pad1.18x1.45mm_HandSolder` |
+| R3 | Resistor | 10 kΩ | `Resistor_SMD:R_0805_2012Metric_Pad1.18x1.45mm_HandSolder` |
+| C1 | Ceramic Capacitor | 10 nF | `Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder` |
+| C2 | Ceramic Capacitor | 100 nF | `Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder` |
+| J1 | 2-Pin Terminal Block | Input | `TerminalBlock_Altech:Altech_AK100_1x02_P5.00mm` |
+| J2 | 2-Pin Terminal Block | Output | `TerminalBlock_Altech:Altech_AK100_1x02_P5.00mm` |
+| J3 | 2-Pin Terminal Block | Power | `TerminalBlock_Altech:Altech_AK100_1x02_P5.00mm` |
+
+### Connector Pinout
+
+| Connector | Pin 1 | Pin 2 |
+|---|---|---|
+| J1 – Input | VIN | GND |
+| J2 – Output | VOUT | GND |
+| J3 – Power | +5 V | GND |
+
+### Circuit Parameters
+
+| Parameter | Value |
+|---|---:|
+| Supply Voltage | +5 V |
+| Input Range | 0–1 V |
+| Voltage Gain | 3× |
+| Output Range | 0–3 V |
+| Filter | RC Low-Pass |
+| Cutoff Frequency | ~1.59 kHz |
+
+### KiCAD schematic 
+
+![KiCAD schematic](Documentation/KiCAD_schematic.png)
+
 ### PCB Layout
 
 [PCB screenshot will go here]
