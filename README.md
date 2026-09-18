@@ -2,9 +2,7 @@
 
 ## Overview
 
-This project involves the design of a small analog signal-conditioning
-circuit intended to convert a low-level sensor signal into a
-0–3.3 V signal suitable for microcontroller ADC interfacing.
+This project involves the design of a small analog signal-conditioning circuit intended to convert a 0–1 V sensor signal into a 0–3 V output suitable for microcontroller ADC interfacing.
 
 The circuit was designed and simulated using LTspice and implemented
 as a 2-layer PCB using KiCad.
