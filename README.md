@@ -24,6 +24,20 @@ as a 2-layer PCB using KiCad.
 
 ![Circuit Design](Documentation/schematic.png)
 
+## Design Summary
+
+| Parameter | Value |
+|---|---:|
+| Input signal | 0–1 V |
+| Output signal | 0–3 V |
+| Supply | +5 V |
+| Amplifier | LM358 non-inverting |
+| Voltage gain | 3× |
+| Low-pass filter | 1st-order RC |
+| Filter cutoff | ~1.59 kHz |
+| PCB layers | 2 |
+| PCB dimensions | 60 × 40 mm |
+
 ## LTspice Simulation
 
 ### Frequency Response
@@ -80,10 +94,6 @@ as a 2-layer PCB using KiCad.
 ### 3D View
 
 ![3D PCB](Documentation/PCB_3D.png)
-
-## Results
-
-Simulation results and final design performance will be documented here.
 
 ## Verification Procedure
 
@@ -259,6 +269,26 @@ The measured cutoff frequency agrees closely with the theoretical value of appro
 **Result:** Pass
 
 ![Filter Frequency Response](Documentation/test-04-filter-response.png)
+
+## Results
+
+| Verification | Expected | Measured | Result |
+|---|---:|---:|---|
+| Voltage gain | 3× | 3.00× | Pass |
+| Low-frequency gain | ~9.54 dB | ~9.5 dB | Pass |
+| Filter cutoff | ~1.59 kHz | ~1.6 kHz | Pass |
+| PCB DRC errors | 0 | 0 | Pass |
+
+## PCB Design Verification
+
+The PCB layout was checked using KiCad's Design Rules Checker (DRC).
+
+**Result:**
+- DRC errors: 0
+- Unconnected items: 0
+- Board outline: 60 × 40 mm
+
+The design passed the final DRC check before fabrication outputs were generated.
 
 ## Files
 
