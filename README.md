@@ -70,7 +70,7 @@ Verify that the op-amp is receiving the required +5 V supply voltage before eval
 
 | Parameter | Expected |
 |---|---:|
-| Positive supply (`V+`) | +5 V |
+| Supply voltage (`V+`) | +5 V |
 | Supply stability | Stable |
 
 **Measured Result:**  
