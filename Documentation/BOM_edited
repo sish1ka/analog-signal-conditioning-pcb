@@ -1,0 +1,12 @@
+# Bill of Materials
+
+| Reference | Component | Value | Quantity | Footprint |
+|---|---|---:|---:|---|
+| C1 | Ceramic Capacitor | 10 nF | 1 | 0805 |
+| C2 | Ceramic Capacitor | 100 nF | 1 | 0805 |
+| R1, R3 | Resistor | 10 kΩ | 2 | 0805 |
+| R2 | Resistor | 20 kΩ | 1 | 0805 |
+| U1 | Dual Op-Amp | LM358 | 1 | SOIC-8 |
+| J1 | 2-Pin Terminal Block | Input | 1 | Altech AK100 |
+| J2 | 2-Pin Terminal Block | Output | 1 | Altech AK100 |
+| J3 | 2-Pin Terminal Block | Power | 1 | Altech AK100 |
