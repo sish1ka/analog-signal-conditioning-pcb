@@ -292,8 +292,8 @@ The design passed the final DRC check before fabrication outputs were generated.
 
 ## Files
 
-- `LTspice/` — circuit simulations
-- `KiCad/` — schematic and PCB design files
 - `Documentation/` — design images and results
+- `KiCad/` — schematic and PCB design files
+- `LTspice/` — circuit simulations
 - `BOM/` — bill of materials
 - `Gerbers/` — manufacturing outputs
