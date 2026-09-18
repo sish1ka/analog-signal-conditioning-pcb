@@ -11,7 +11,7 @@ as a 2-layer PCB using KiCad.
 
 - Design an analog amplification stage
 - Implement low-pass filtering
-- Maintain an ADC-compatible 0–3.3 V output
+- Maintain an ADC-compatible 0–3 V output
 - Verify circuit behavior through simulation
 - Design and verify a 2-layer PCB
 
