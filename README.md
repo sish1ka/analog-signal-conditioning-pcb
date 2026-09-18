@@ -94,26 +94,24 @@ proceeding to the next stage.
 ### 1. Op-Amp Supply Voltage Verification
 
 **Purpose:**  
-Verify that the op-amp is receiving the required +5 V and −5 V supply
-voltages before evaluating signal behavior.
+Verify that the op-amp is receiving the required +5 V supply voltage before evaluating signal behavior.
 
 **Procedure:**
+
 1. Run a transient analysis in LTspice.
 2. Probe the op-amp positive supply node (`V+`).
-3. Probe the op-amp negative supply node (`V-`).
-4. Confirm that the supply voltages are approximately +5 V and −5 V.
-5. Verify that both supply voltages remain stable throughout the simulation.
+3. Confirm that the supply voltage is approximately +5 V.
+4. Verify that the supply voltage remains stable throughout the simulation.
 
 **Expected Result:**
 
-| Parameter | Positive Supply (`V+`) | Negative Supply (`V-`) |
-|---|---:|---:|
-| Supply voltage | +5 V | −5 V |
-| Supply stability | Stable | Stable |
+| Parameter | Expected |
+|---|---:|
+| Positive supply (`V+`) | +5 V |
+| Supply stability | Stable |
 
 **Measured Result:**  
-`V+ = 5.00 V`  
-`V- = −5.00 V`
+`V+ = 5.00 V`
 
 **Result:** Pass
 
