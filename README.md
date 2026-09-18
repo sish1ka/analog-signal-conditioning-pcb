@@ -272,12 +272,12 @@ The measured cutoff frequency agrees closely with the theoretical value of appro
 
 ## Results
 
-| Verification | Expected | Measured | Result |
-|---|---:|---:|---|
-| Voltage gain | 3× | 3.00× | Pass |
-| Low-frequency gain | ~9.54 dB | ~9.5 dB | Pass |
-| Filter cutoff | ~1.59 kHz | ~1.6 kHz | Pass |
-| PCB DRC errors | 0 | 0 | Pass |
+| Verification | Theoretical | Measured | Error | Result |
+|---|---:|---:|---:|---|
+| Voltage gain | 3.00× | 3.00× | 0% | Pass |
+| Low-frequency gain | 9.54 dB | 9.5 dB | 0.42% | Pass |
+| Filter cutoff | 1.59 kHz | 1.60 kHz | 0.63% | Pass |
+| PCB DRC errors | 0 | 0 | — | Pass |
 
 ## PCB Design Verification
 
