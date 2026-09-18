@@ -270,3 +270,4 @@ The measured cutoff frequency agrees closely with the theoretical value of appro
 - `KiCad/` — schematic and PCB design files
 - `Documentation/` — design images and results
 - `BOM/` — bill of materials
+- `Gerbers/` — manufacturing outputs
