@@ -77,11 +77,11 @@ as a 2-layer PCB using KiCad.
 
 ### PCB Layout
 
-[PCB screenshot will go here]
+![2D_PCB](Documentation/PCB_2D.png)
 
 ### 3D View
 
-[3D PCB screenshot will go here]
+![3D PCB](Documentation/PCB_3D.png)
 
 ## Results
 
